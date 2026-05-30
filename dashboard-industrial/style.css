@@ -1,0 +1,63 @@
+body {
+    background-color: #1e1e1e;
+    color: white;
+    font-family: monospace;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #00bfff;
+}
+
+.painel {
+    background-color: #2b2b2b;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 16px;
+}
+
+button {
+    background-color: #0077cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005fa3;
+}
+
+#temperatura {
+    font-size: 40px;
+    margin-top: 15px;
+}
+
+/* Classes para alerta */
+
+.normal {
+    color: lime;
+}
+
+.alerta {
+    color: orange;
+}
+
+.perigo {
+    color: red;
+    font-weight: bold;
+}

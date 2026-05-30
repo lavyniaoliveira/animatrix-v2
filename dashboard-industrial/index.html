@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Industrial</title>
+
+    <!-- Ligando o CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>Dashboard Industrial SCADA</h1>
+
+        <!-- Área de login -->
+        <div class="painel">
+            <h2>Acesso do Operador</h2>
+
+            <input type="text" id="nomeOperador" placeholder="Digite seu nome">
+
+            <button onclick="validarAcesso()">
+                Entrar
+            </button>
+
+            <p id="mensagemAcesso"></p>
+        </div>
+
+        <!-- Painel principal -->
+        <div id="painelSistema" style="display: none;">
+
+            <!-- Select das máquinas -->
+            <div class="painel">
+                <h2>Máquinas</h2>
+
+                <select id="listaMaquinas" onchange="verificarStatus()">
+
+                    <option value="">
+                        Selecione uma máquina
+                    </option>
+
+                </select>
+
+                <p id="statusMaquina"></p>
+            </div>
+
+            <!-- Sensor -->
+            <div class="painel">
+                <h2>Sensor Térmico</h2>
+
+                <div id="temperatura">
+                    0°C
+                </div>
+
+                <p id="situacaoSensor"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Ligando o JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
